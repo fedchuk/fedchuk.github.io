@@ -29,12 +29,12 @@
 </head>
 <body>
 <h1>Spendix Privacy Policy</h1>
-<p class="updated">Last updated: November 7, 2026</p>
+<p class="updated">Last updated: November 12, 2026</p>
 
 <p>Spendix is a personal expense and budget tracker for Android, developed by Maksym Fedchuk. This policy explains what data the app handles and why.</p>
 
 <h2>Your financial data stays on your device</h2>
-<p>Spendix does not have accounts, a server or cloud sync. Everything you enter — transactions, amounts, notes, categories, budgets, your name and settings — is stored only in the app’s local database on your device. We do not receive, see or sell this data. The anonymous usage statistics described below never include it.</p>
+<p>Spendix does not have accounts or its own server. Everything you enter — transactions, amounts, notes, categories, budgets, goals, your name and settings — is stored in the app’s local database on your device. A copy leaves your device only if you turn on Google Drive backup (see below), and then it goes to your own Google Drive. We do not receive, see or sell this data. The anonymous usage statistics described below never include it.</p>
 
 <h2>Exchange rates</h2>
 <p>When you enter an amount in a currency other than your main one, or change your main currency, the app downloads official exchange rates from the National Bank of Ukraine (<a href="https://bank.gov.ua">bank.gov.ua</a>). The request contains only a date. Like any web request, it reveals your IP address to that server. No personal or financial data is sent.</p>
@@ -59,10 +59,20 @@
 <p>Google acts as an independent controller of this data. See <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from sites or apps that use its services</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 <p>If you are in the European Economic Area, the United Kingdom or Switzerland, the app asks for your consent before personalised ads are shown. You can change your choice at any time in <strong>Profile → Data → Ad privacy settings</strong>. You can also reset or delete your advertising ID in your device settings.</p>
 
+<h2>Spendix Pro subscription</h2>
+<p>Spendix Pro is purchased through Google Play. Payment is handled entirely by Google Play; the app never sees your payment details. The app only asks Google Play whether you have an active subscription in order to turn Pro features on. You can manage or cancel the subscription in Google Play at any time.</p>
+<p>The app also reads remote settings from Firebase Remote Config, for example how often full-screen ads may be shown. To do this Firebase uses a random installation ID; it contains no personal or financial data.</p>
+
 <h2>Ratings and updates</h2>
 <p>From time to time the app may show the Google Play rating dialog, and it checks Google Play for a newer version that can be downloaded in the background. Both are provided by Google Play on your device; your rating and review are sent to Google Play, not to the developer.</p>
 
-<h2>Backups</h2>
+<h2>Google Drive backup</h2>
+<p>Spendix Pro users can turn on automatic backup in <strong>Profile → Data → Backup</strong>. When you do, the app asks for permission to use the hidden application data folder in your Google Drive (scope <code>drive.appdata</code>). This folder is visible only to Spendix and is not shown in your Drive files. The app cannot see or access any other files in your Drive.</p>
+<p>Once a day, and when you tap <strong>Back up now</strong>, the app uploads a file with your transactions, categories, quick amounts, goals, recurring payments and basic settings (currency, budget, theme, name and month start day) to that folder. The three most recent copies are kept and older ones are deleted. You can restore a copy on any phone signed in to the same Google account. The backup goes directly from your device to your Google Drive; the developer has no access to it.</p>
+<p>To stop backups, turn off automatic backup in the app. To delete the stored copies and revoke access, open your Google Account → Security → Third-party apps &amp; services → Spendix → Delete all connections, or in Google Drive go to Settings → Manage apps → Spendix → Delete hidden app data.</p>
+<p>Spendix’s use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Data from your Google Drive is used only to store and restore your Spendix backups and is never shared with anyone or used for advertising.</p>
+
+<h2>Android backup</h2>
 <p>If Android backup is turned on in your device settings, Android may back up the app’s database to your own Google account and restore it on a new device. This backup is handled by Android and Google under your Google account settings; the developer has no access to it.</p>
 
 <h2>Export and import</h2>
@@ -70,7 +80,7 @@
 <p>When you choose <strong>Import from CSV</strong>, the app reads only the file you pick and adds its transactions to the local database on your device. The file is not uploaded anywhere.</p>
 
 <h2>Deleting your data</h2>
-<p>You can delete individual transactions and categories in the app. To delete all data, clear the app’s storage in your device settings or uninstall the app.</p>
+<p>You can delete individual transactions and categories in the app. To delete all data on your device, clear the app’s storage in your device settings or uninstall the app. Google Drive backups are deleted as described in the Google Drive backup section.</p>
 
 <h2>Children</h2>
 <p>Spendix is not directed at children under 13 and does not knowingly collect data from them.</p>
